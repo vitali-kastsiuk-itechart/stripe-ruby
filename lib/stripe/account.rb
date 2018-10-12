@@ -15,6 +15,9 @@ module Stripe
     nested_resource_class_methods :external_account,
                                   operations: %i[create retrieve update delete list]
     nested_resource_class_methods :login_link, operations: %i[create]
+    save_nested_resource :person
+    nested_resource_class_methods :person,
+                                  operations: %i[create retrieve update delete list]
 
     # This method is deprecated. Please use `#external_account=` instead.
     save_nested_resource :bank_account
