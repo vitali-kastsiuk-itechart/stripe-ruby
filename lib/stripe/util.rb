@@ -56,6 +56,10 @@ module Stripe
         'token'                   => Token,
         'transfer'                => Transfer,
         'transfer_reversal'       => Reversal,
+        PaymentIntent::OBJECT_NAME             => PaymentIntent,
+        Terminal::ConnectionToken::OBJECT_NAME => Terminal::ConnectionToken,
+        Terminal::Location::OBJECT_NAME        => Terminal::Location,
+        Terminal::Reader::OBJECT_NAME          => Terminal::Reader,
       }
     end
 
